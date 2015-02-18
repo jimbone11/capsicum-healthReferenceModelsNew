@@ -1,0 +1,54 @@
+# baseURI: http://www.capsi.com.au/healthReferenceModelsNew/healthReferenceModelsNew/healthReferenceModelsNew-Scaffold
+# imports: http://www.capsi.com.au/healthReferenceModelsNew/healthReferenceModelsNew/TV/core/Scaffold
+# imports: http://www.capsi.com.au/healthReferenceModelsNew/healthReferenceModelsNew/BV/core/Scaffold
+
+# c14n-version: 3
+@prefix CBV: <http://capsi.com.au/core/CAPSICUM-BV#> .
+@prefix CDS: <http://capsi.com.au/core/DomainScaffold#> .
+@prefix CTV: <http://capsi.com.au/core/CAPSICUM-TV#> .
+@prefix capsi: <http://capsi.com.au/core/MetaConcepts#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix healthReferenceModelsNew-MS: <http://www.capsi.com.au/healthReferenceModelsNew/healthReferenceModelsNew/healthReferenceModelsNew-Scaffold#> .
+@prefix healthReferenceModelsNew-MBVS: <http://www.capsi.com.au/healthReferenceModelsNew/healthReferenceModelsNew/BV/core/Scaffold#> .
+@prefix healthReferenceModelsNew-MTVS: <http://www.capsi.com.au/healthReferenceModelsNew/healthReferenceModelsNew/TV/core/Scaffold#> .
+@prefix healthReferenceModelsNew-MPVS: <http://www.capsi.com.au/healthReferenceModelsNew/healthReferenceModelsNew/PV/core/Scaffold#> .
+
+<http://www.capsi.com.au/healthReferenceModelsNew/healthReferenceModelsNew/healthReferenceModelsNew-Scaffold>
+  rdf:type owl:Ontology ;
+  owl:imports <http://www.capsi.com.au/healthReferenceModelsNew/healthReferenceModelsNew/TV/core/Scaffold>;
+  owl:imports <http://www.capsi.com.au/healthReferenceModelsNew/healthReferenceModelsNew/BV/core/Scaffold>;
+.
+
+
+
+capsi:healthReferenceModelsNew_Module  a     capsi:Module ;
+        rdfs:label       "healthReferenceModelsNew Module"^^xsd:string ;
+        rdfs:subClassOf  rdfs:Resource ;
+	capsi:jroot "capsicum-healthReferenceModelsNew" ;
+	capsi:base "http://www.capsi.com.au/healthReferenceModelsNew/healthReferenceModelsNew" ;
+	capsi:moduleID "healthReferenceModelsNew" ;
+	capsi:namespaces """
+CBV: http://capsi.com.au/core/CAPSICUM-BV# 
+CDS: http://capsi.com.au/core/DomainScaffold# 
+CTV: http://capsi.com.au/core/CAPSICUM-TV# 
+capsi: http://capsi.com.au/core/MetaConcepts# 
+owl: http://www.w3.org/2002/07/owl# 
+rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# 
+rdfs: http://www.w3.org/2000/01/rdf-schema# 
+xsd: http://www.w3.org/2001/XMLSchema# 
+healthReferenceModelsNew-ont: http://www.capsi.com.au/healthReferenceModelsNew/healthReferenceModelsNew/
+healthReferenceModelsNew-MS: http://www.capsi.com.au/healthReferenceModelsNew/healthReferenceModelsNew/healthReferenceModelsNew-Scaffold# 
+healthReferenceModelsNew-MBVO: http://www.capsi.com.au/healthReferenceModelsNew/healthReferenceModelsNew/core/BV/
+healthReferenceModelsNew-MTVO: http://www.capsi.com.au/healthReferenceModelsNew/healthReferenceModelsNew/core/TV/
+healthReferenceModelsNew-MPVO: http://www.capsi.com.au/healthReferenceModelsNew/healthReferenceModelsNew/core/PV/
+healthReferenceModelsNew-MBVS: http://www.capsi.com.au/healthReferenceModelsNew/healthReferenceModelsNew/core/BV/Scaffold# 
+healthReferenceModelsNew-MTVS: http://www.capsi.com.au/healthReferenceModelsNew/healthReferenceModelsNew/core/TV/Scaffold# 
+healthReferenceModelsNew-MPVS: http://www.capsi.com.au/healthReferenceModelsNew/healthReferenceModelsNew/core/PV/Scaffold# 
+healthReferenceModelsNew-MBV: http://www.capsi.com.au/healthReferenceModelsNew/healthReferenceModelsNew/core/BV# 
+healthReferenceModelsNew-MTV: http://www.capsi.com.au/healthReferenceModelsNew/healthReferenceModelsNew/core/TV# 
+healthReferenceModelsNew-MPV: http://www.capsi.com.au/healthReferenceModelsNew/healthReferenceModelsNew/core/PV# 
+	""";
+        capsi:hasOwner   "CapsicumhealthReferenceModelsNewUser"^^xsd:string .

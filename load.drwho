@@ -1,0 +1,10 @@
+mode=local 
+host=localhost
+port=${ml.app-port}
+username=${ml.user}
+password=${ml.password}
+rel=capsicum-healthReferenceModelsNew/
+permissions#1=CapsicumhealthReferenceModelsNew|read
+permissions#2=Capsicum%Modlue%|update
+primaryUser=CapsicumhealthReferenceModelsNewUser
+updateRole=CapsicumhealthReferenceModelsNew

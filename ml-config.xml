@@ -1,0 +1,57 @@
+
+  <roles xmlns="http://marklogic.com/xdmp/security">
+    <role> <role-name>CapsicumhealthReferenceModelsNew</role-name>
+           <description>Role related to Capsicum healthReferenceModelsNew extension</description>
+	   <privileges>
+	     <privilege>
+	       <privilege-name>sem:sparql</privilege-name>
+	     </privilege>
+	     <privilege>
+	       <privilege-name>admin-module-read</privilege-name>
+	     </privilege>
+	     <privilege>
+	       <privilege-name>xdmp:set-server-field</privilege-name>
+	     </privilege>
+	     <privilege>
+	       <privilege-name>qconsole</privilege-name>
+	     </privilege>
+	     <privilege>
+	       <privilege-name>xdmp:get-server-field</privilege-name>
+	     </privilege>
+	     <privilege>
+	       <privilege-name>xdmp:add-response-header</privilege-name>
+	     </privilege>
+	     <privilege>
+	       <privilege-name>xdmp:get-session-field</privilege-name>
+	     </privilege>
+	     <privilege>
+	       <privilege-name>xdmp:set-session-field</privilege-name>
+	     </privilege>
+	     <privilege>
+	       <privilege-name>xdmp:filesystem-directory</privilege-name>
+	     </privilege>
+	     <privilege>
+	       <privilege-name>xdmp:document-get</privilege-name>
+	     </privilege>
+	     <privilege>
+	       <privilege-name>any-uri</privilege-name>
+	     </privilege>
+	     <privilege>
+	       <privilege-name>any-collection</privilege-name>
+	     </privilege>
+	   </privileges>
+    </role>
+    
+  </roles>
+  <users xmlns="http://marklogic.com/xdmp/security">
+
+    <user><user-name>CapsicumhealthReferenceModelsNewUser</user-name>
+          <description>User who can read Capsicum core along with healthReferenceModelsNew models</description>
+	  <password>capsi123</password>
+	  <role-names>
+	    <role-name>Jalapeno-role</role-name>
+	    <role-name>CapsicumCore</role-name>
+	    <role-name>CapsicumhealthReferenceModelsNew</role-name>
+	  </role-names>
+    </user>
+  </users>
